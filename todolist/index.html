@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODO LİST</h1>
+        <hr>
+        <input type="text" id="txtTodoItem">
+        <input type="button" onclick="addItem()" value="Ekle">
+        <div class="item-holder">
+            <div class="item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Spor Yap</span>
+                <i class="fa-solid fa-circle-xmark red-text"></i>
+            </div>
+            <div class="item">
+                <i class="fa-regular fa-circle"></i>
+                <span>Spor Yap</span>
+                <i class="fa-solid fa-circle-xmark red-text"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        let todoItems = [];
+
+        function addItem() {
+            var todoItemText = document.getElementById("txtTodoItem").value;
+            const todo = {
+                text: todoItemText,
+                checked: false,
+                id: Date.now()
+
+            }
+            todoItems.push(todo)
+            console.log(todoItems);
+            renderItem(todo);
+
+            function renderItem(todo) {
+                const list =document.getElementById
+            }
+        }
+    </script>
+</body>
+
+</html>
